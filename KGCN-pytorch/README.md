@@ -44,12 +44,22 @@ In Proceedings of The 2019 Web Conference (WWW 2019)
 
 3. `model.py`
     - KGCN model network
+  
+4. `main.py`
+    - Running the code
 
-## Running the code
-
-Look at the `KGCN.ipynb`.
+Look at the `main.py`.
 
 It contains
 - how to construct Datset
 - how to construct Data loader
 - how to train network
+- how to evaluate experimental results
+
+### Hyperparameter adjustment
+1. `test-neighbor_sample_size.py`
+    - Experimenting with the effect of different parameters neighbor_sample_size on auc_score
+2. `test-receptive-field.py`
+    - Experimenting with the effect of different parameters receptive-field_size on auc_score
+3. `test-dim.py`
+    - Experimenting with the effect of different parameters dim_size on auc_score
